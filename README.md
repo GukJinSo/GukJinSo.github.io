@@ -3,10 +3,14 @@
 
 영화 및 배우 정보와 트레일러를 제공하는 영화 사이트입니다. <br>
 주요 기능은 영화 검색이며 관리자의 경우 권한 검사를 통해 Create Update Delete가 가능합니다. <br>
-사이트에서 보여주는 데이터는 TMDB API를 크롤링해서 만들었습니다. <br>
+사이트에서 보여주는 데이터는 TMDB API의 인기 영화 1000건을 크롤링해서 만들었습니다. <br>
 
 학업을 병행하는 1인 작업이다 보니 API 명세서와 다르게 뷰 단에서는 구현하지 못한 미흡한 부분이 많습니다. 계속 업데이트 하겠습니다. <br>
 감사합니다. <br>
+
+
+## 백엔드 API 명세 (스웨거)
+### https://api.guckflix.site/swagger-ui.html
 
 
 ## 백엔드 깃허브
@@ -27,10 +31,6 @@ Paging, Slice : 각각 페이징 객체, 무한스크롤용 응답 객체 <br>
 ApiExceptionHandler : 익셉션 관리 객체. 스프링 에러 전파에 따라 의도하지 않는 응답을 막기 위함 <br>
 DTO 패키지 : 관리 편의상 기능별 한 개의 dto를 만들고 하위 스태틱 이너 클래스를 작성하여 api 명세와 valid 어노테이션 기재 <br>
 SecurityConfig.corsFilter() : CORS 필터. addAllowedOrigin()에 환경변수를 사용하고 201 응답을 위한 location 헤더만 addExposedHeader() 적용했습니다. <br>
-
-
-## 백엔드 API 명세 (스웨거)
-### https://api.guckflix.site/swagger-ui.html
 
 
 ## 프론트엔드 깃허브
