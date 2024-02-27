@@ -17,11 +17,11 @@
 ### https://github.com/GukJinSo/guckflix-backend
 
 스프링 부트 2.7.6 + 간단한 쿼리에 JPA, 복잡한 쿼리는 querydsl를 사용합니다. <br>
-운영 DB와 로컬 DB는 각각 mysql, h2입니다.
+운영 DB와 로컬 테스트 DB는 각각 AWS RDS Mysql, h2입니다.
 크롤링 초기 데이터는 JdbcTemplate를 통해 배치 방식으로 저장했습니다. <br>
 스프링 시큐리티에 Session 쿠키 방식으로 인증 인가를 관리합니다. <br>
 구글 Oauth2 로그인이 가능합니다. <br>
-AWS RDS Mysql과 EC2에 배포하여 사용했습니다. <br>
+AWS EC2 ubuntu 환경을 빌려 도커 컨테이너에 배포하여 사용했습니다. <br>
 AWS에서 제공하는 로드밸런서를 통해 http로 요청하더라도 https로 리다이렉트 되도록 설정했습니다. <br>
 SSL은 AWS에서 간편하게 제공하는 무료 인증서를 사용했습니다. <br>
 
